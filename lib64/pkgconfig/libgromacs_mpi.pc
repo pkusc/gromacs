@@ -1,0 +1,11 @@
+libdir=/home/CORP.PKUSC.ORG/flyingpig/gromacs/lib64
+
+Name: libgromacs_mpi
+Description: Gromacs library
+URL: http://www.gromacs.org
+Version: 2020.2
+Requires:  
+Libs.private: -lpthread -ldl 
+Libs: -L${libdir} -lgromacs_mpi  -lm
+Cflags:  -I/home/CORP.PKUSC.ORG/flyingpig/gromacs/include -DGMX_DOUBLE=0 -fopenmp
+
